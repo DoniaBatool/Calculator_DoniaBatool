@@ -1,6 +1,6 @@
 {
   
-  "name": "doniabatool_calculator_node-projects",
+  "name": "doniabatool_calculate_node-projects",
   
   "version": "1.0.1",
   
@@ -9,6 +9,13 @@
   "main": "index.js",
   
   "type": "module",
+
+  "publishConfig": {
+    "access":"public"
+  },
+
+  "bin": "calculate.js",
+
   
   "scripts": {
   
@@ -24,10 +31,10 @@
   "devDependencies": {
   
     
-  "@types/node": "^20.11.30",
+  "@types/node": "^20.11.30"
   
     
-  "bin": "calculate.js"
+  
   
   },
   

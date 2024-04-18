@@ -1,4 +1,4 @@
-#! usr/bin/env node;
+#! /usr/bin/env node;
 import inquirer from "inquirer";
 let result = await inquirer.prompt([
     {
@@ -15,7 +15,8 @@ let result = await inquirer.prompt([
         type: "list",
         name: "operator",
         message: "Select the operation you need to perform:",
-        choices: ["Select an operator", "Addition", "Subtraction", "Multiplication", "Division", "Modulus", "Exponent"]
+        choices: ["Select an operator", "Addition", "Subtraction", "Multiplication",
+            "Division", "Modulus", "Exponent"]
     }
 ]);
 let { firstNumber, secondNumber, operator } = result;
